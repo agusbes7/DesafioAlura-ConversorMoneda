@@ -19,3 +19,6 @@ devuelve todo la base de tasas
 
 
 es flexible para agregar más numeracion de una forma rapida y que no afecta al resto del codigo
+
+La gestionConversion es una interfaz que obliga a moneda a implementar  el pedido de la request
+y el transformar la informacion en algo util 
