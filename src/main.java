@@ -1,26 +1,41 @@
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
-import java.net.http.HttpResponse.BodyHandlers;
-import java.net.URI;
 
 public void main(String[] args) {
-    System.out.println("Bienvenidos pueden obtener tasas de conversion actualizadas");
-/*    Scanner opcion= new Scanner(System.in);
-Implementar a futuro el tratado de errores de malos inresos por teclado como ingresar una letra en un int
-    try {
-        opcion.nextInt();}
-    catch (NumberFormatException e){
-        System.out.println("Recuerda ingresar solo numeros enteros en el rango [1-7]");}*/
+    Scanner opcion = new Scanner(System.in);
+    int opc=0;
 
-    String direccion="https://v6.exchangerate-api.com/v6/2958c704ea28742fd07d154c/latest/";
-    HttpClient client = HttpClient.newHttpClient();
-    HttpRequest request = HttpRequest.newBuilder()
-            .uri(URI.create(direccion+"USD"))
-            .build();
-    client.sendAsync(request, BodyHandlers.ofString())
-            .thenApply(HttpResponse::body)
-            .thenAccept(responseBody-> {
-        System.out.println("JSON Response:\n" + responseBody);})
-            .join();}
+    while (true) {linea();
+
+System.out.println("Bienvenidos pueden obtener tasas de conversion actualizadas");
+linea(); menu(); linea(); //pueden observar el menu de opciones
+System.out.print("Ingresen la opcion correspondiente a la moneda de origen");
+
+try {
+      opc = opcion.nextInt();
+      if (opc == 7) {
+      System.out.println("Esperamos haberlo ayudado...Nos vemos pronto!!");
+      break;}
+      else if (opc > 7) {
+      System.out.println("Recuerda ingresar solo opciones del menu [1-7]");
+      continue;}
+
+} catch (Exception e) {
+      System.out.println("Recuerda ingresar solo opciones del menu [1-7]");
+      opcion.nextLine();}
+moneda cambio=new moneda();
+cambio.getSolicitud(opc);
+
+}}
+
+
+//----------------Interfaz de usuario---------------------
+public static void linea(){
+        String linea = String.valueOf("*").repeat(50);
+        System.out.println(linea);}
+public static  void  menu(){
+        System.out.println("opcion 1---->Argentina");
+        System.out.println("opcion 2---->BOlivia");
+        System.out.println("opcion 3---->Brasil");
+        System.out.println("opcion 4---->Chile");
+        System.out.println("opcion 5---->Colombia");
+        System.out.println("opcion 6---->Estados Unidos");}
 
