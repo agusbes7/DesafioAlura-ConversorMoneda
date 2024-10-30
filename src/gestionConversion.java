@@ -1,7 +1,8 @@
 
 
-public interface gestionConversion {
-    public void GetSolicitud(String pais);
+interface gestionConversion {
+    void getSolicitud(int x);
+    void transform();
 
 }
 
