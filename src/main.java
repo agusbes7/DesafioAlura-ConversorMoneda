@@ -26,7 +26,7 @@ listaDeConversiones.add(cambio);
 }
 
     System.out.println("Esperamos haberlo ayudado...Nos vemos pronto!!");
-    if(listaDeConversiones.isEmpty()==false){
+  //Implementar el mostar la lista de conversiones
 
     }
 }
