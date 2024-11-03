@@ -19,16 +19,15 @@ public float getCantidad() {        return cantidad;}
 public String getEntrada() {        return entrada;    }
 public String getSalida() {        return salida;}
 //--------------------------------------------------------------------------------------------------------
-    public void calculoTransformado(){
-         String aux=getSolicitud();
-        Tasas factor=transform(aux);
+    public void calculoTransformado() {
+        String aux = getSolicitud();
+        Tasas factor = transform(aux);
         factor.getTasa();
-        float rate=factor.findRate(salida);
-        cantidad=cantidad*rate;
-        System.out.println("El resultado de la operacion resulta en un saldo de:"+cantidad);
+        float rate = factor.findRate(salida);
+        cantidad = cantidad * rate;
+        System.out.println("La conversion de capitales resulta en:" + cantidad);
         System.out.println("----------------------------------");
-        System.out.println(factor);}
-
+    }
 //-----------------------conexion con la Api proporcionada ---------------------------------
  private String getSolicitud() {
 

@@ -4,6 +4,7 @@ public void main(String[] args) {
     int bandera=0;
 List<Moneda> listaDeConversiones= new ArrayList<>();
     while (true) {
+
         Moneda cambio = new Moneda();
         System.out.println("Bienvenidos pueden obtener tasas de conversion actualizadas");
         linea();
@@ -43,7 +44,7 @@ public static  void  menu(){
         System.out.println("opcion 4---->Chile");
         System.out.println("opcion 5---->Colombia");
         System.out.println("opcion 6---->Estados Unidos");
-    System.out.println("opcion 7---->Salir");}
+         System.out.println("opcion 7---->Salir");}
 public  static int existePais(String entrada_salida){
 
     Scanner opcion = new Scanner(System.in);
@@ -83,7 +84,7 @@ public  static int operacion(){
         System.out.print("""
                 *****************
                 Presiona 1 para Si
-                Presiona 2 para No
+                Presiona 0 para No
                 *****************
                 Respuesta: """);
         try {
