@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public abstract class tasaDeConversion {
+public abstract class TasaDeConversion {
     private static final Map<Integer, String> opcionesMenu = new HashMap<>();
     static {
         opcionesMenu.put(1, "ARS");
