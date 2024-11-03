@@ -1,4 +1,15 @@
+**##Bienvenidos**
+###voy a describir  brevemente los metodos y funcionamiento
+
+
+
+
+
 En tasaDeConversion
+
+
+
+
 cargué la nomenclatura pedida por el desafio como conversiones
 con la idea de clave-valor con clave de tipo entero para seguir el ingreso por teclado 
 realizado en la consola por el usuario
