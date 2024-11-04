@@ -9,7 +9,7 @@ public record Tasas(
 @SerializedName("base_code")    String base,
 @SerializedName("conversion_rates")              Map<String,Float>rates){
 
-    public String getTasa(){
+    public void getTasa(){
             System.out.println("El resultado de la operacion fue:"+     result);
         System.out.println("Moneda de origen: "+base+ " ");
         System.out.println("fecha de operacion: "+ fecha);}
