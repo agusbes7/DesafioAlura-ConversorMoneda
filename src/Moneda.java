@@ -5,6 +5,7 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.security.Key;
 
 public class Moneda {
    private  float cantidad;
@@ -22,17 +23,21 @@ public String getSalida() {        return salida;}
     public void calculoTransformado() {
         String aux = getSolicitud();
         Tasas factor = transform(aux);
+        if(factor.operacionExitosa()==true){
         factor.getTasa();
         float rate = factor.findRate(salida);
         cantidad = cantidad * rate;
         System.out.println("La conversion de capitales resulta en:" + cantidad);
         System.out.println("----------------------------------");
     }
+else {System.out.println("Lo siento fallo la operacion");}
+        }
 //-----------------------conexion con la Api proporcionada ---------------------------------
  private String getSolicitud() {
+String clave="null";
+    String direccion = "https://v6.exchangerate-api.com/v6/"+clave+"/latest/";
 
-        String direccion = "https://v6.exchangerate-api.com/v6/2958c704ea28742fd07d154c/latest/";
-        String datos="null";
+     String datos="null";
       try {
 
        HttpClient client = HttpClient.newHttpClient();
@@ -47,7 +52,7 @@ public String getSalida() {        return salida;}
                 .send(request, HttpResponse.BodyHandlers.ofString());
         datos=respuesta.body();}
       //guardar respuesta de la solicitud
-      catch (IOException | InterruptedException e) {
+      catch (IOException | InterruptedException  e) {
           e.printStackTrace();
 return  "Lo siento intenta mas tarde estamos experimentando problemas con el servidor" ;}
       return datos;}
