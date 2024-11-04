@@ -1,5 +1,5 @@
 # **Bienvenidos**
-![Banner-3.jpg](Banner-3.jpg)
+![Banner-3.jpg](Medias/Banner-3.jpg)
 
 ## 🚀 Presentacion 🚀
 
@@ -45,7 +45,7 @@ Para usarla deberan realizar las implementaciones pertinente de los metodos en l
 #### A continuacion voy a describir  brevemente un poco lo que es modelo y los metodos y funcionamiento.
 
 Les comparto el desafio propuesto por alura [Trello](https://trello.com/b/RU41cvaQ/conversor-de-moneda-challenge-one-java-back-end)
-![img_1.png](img_1.png)
+![img_1.png](Medias/img_1.png)
 > En primer lugar el funcionamiento basico es un conversor de Divisas. Se ingresa la moneda de origen,el monto y la moneda de destino.
 
 💣 _Todo programa debe ser **robusto** asi que nos aseguramos con bloques ___🔒try-catch🔒___ que nuestra aplicacion puede **manejar excepciones** ante un uso inadecuado por parte del **usuario**._   
@@ -84,7 +84,7 @@ _Este Diseño responde al funcionamiento de la API proporcionada_
 > _Se gestiona de forma externa a otras clases y permite agregar rapidamente mas Bases sin alterar el funcionamiento o requerir mucho trabajo_
 
 ### 📶--API--📶
-![img_3.png](img_3.png)
+![img_3.png](Medias/img_3.png)
 >pagina utilizada durante el proyecto [Exchange Rate API](https://www.exchangerate-api.com/docs/java-currency-api)  
 
 _En el sitio tendran acceso a toda la documentacion y gestionar su **API-KEY gratuita**._  
@@ -101,7 +101,7 @@ Perteneciente a paquetes HTTP de java las librerias
 
 _La primera opcion consiste en cargar la moneda de entrada obtener la tasa de salida de todo el conjunto de tasas obtenido y realizar la conversion manualmente_
 
-![Rates.jpg](Rates.jpg)  
+![Rates.jpg](Medias/Rates.jpg)  
 
 📚Por motivos de seguridad la direccion no estará cargada deben obtener su Key y cargarla en el **campo direccion**
 >GET https://v6.exchangerate-api.com/v6/YOUR-API-KEY/latest/USD    
@@ -111,12 +111,12 @@ _🔵Cargamos la direccion con la clave y la base de la moneda "ARS","USD"_
 La segunda opcion proviene de cambiar la palabra ___latest___ por **pair** como indica la documentacion podran cargar una segunda moneda de esta forma obtenemos unicamente la tasa de dicho pais y no un conjunto quedando pendiente realizar la conversion de Divisas solamente
 
 
-![img_4.png](img_4.png)
+![img_4.png](Medias/img_4.png)
 > GET https://v6.exchangerate-api.com/v6/YOUR-API-KEY/pair/Mon-Origen/Mon-Salida     
 > 
 La tercera opcion es igual que la anterior con un parametro extra para indicar el monto de la base de entrada  
 > 
-![img_5.png](img_5.png)
+![img_5.png](Medias/img_5.png)
 > GET https://v6.exchangerate-api.com/v6/YOUR-API-KEY/pair/ORG/SAL/1500    
 > 
 De esta forma resta obtener el resultado nada mas, la conversion fue realizada automaticamente por la API
@@ -177,12 +177,12 @@ ___Tene en cuenta que la actualizacion de las tasas se actualiza cada dia no te 
 
 >Convertiremos de $$ argentinos a Dolar Estadounidense
 
->>>![img_6.png](img_6.png)   
+>>>![img_6.png](Medias/img_6.png)   
 
 >Cargamos la moneda de origen y el monto   **$1500**
  
 
->>> ![img_7.png](img_7.png)
+>>> ![img_7.png](Medias/img_7.png)
 > + Observamos el resultado exitoso de la request
 > + La moneda Base
 > + La fecha de la operacion
@@ -193,16 +193,16 @@ Ya podemos realizar otra operacion si deseamos
 > 
 >convertimos de pesos argentinos a colombianos  
 > 
->![img_8.png](img_8.png)    
+>![img_8.png](Medias/img_8.png)    
 
 > Probemos convertir 15 Dolares a la moneda chilena   
-![img_9.png](img_9.png)    
+![img_9.png](Medias/img_9.png)    
 
 >Por ultimo probemos salir   
->>>![img_10.png](img_10.png)  
+>>>![img_10.png](Medias/img_10.png)  
  
 >Te dejo un ejemplo para que veas que un error no interrumpe el flujo de ejecucion     
 
->>> ![img_11.png](img_11.png)
+>>> ![img_11.png](Medias/img_11.png)
 
 
