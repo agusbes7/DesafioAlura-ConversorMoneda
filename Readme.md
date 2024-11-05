@@ -43,7 +43,7 @@ Para usarla deberan realizar las implementaciones pertinente de los metodos en l
 ---
 ## 💻--Introduccion--💻
 
-#### A continuacion voy a describir  brevemente un poco lo que es modelo y los metodos y funcionamiento.
+#### A continuacion voy a describir  brevemente un poco lo que es el modelo, los metodos y funcionamiento.
 
 Les comparto el desafio propuesto por alura [Trello](https://trello.com/b/RU41cvaQ/conversor-de-moneda-challenge-one-java-back-end)
 ![img_1.png](Medias/img_1.png)
@@ -55,7 +55,7 @@ En cualquier punto de la operacion el usuario puede arrepentirse y simplemente f
 >>>![img_6.png](Medias/img_6.png)
 
 Todo el menu excepto el monto es manejado con ingreso de variables enteras!!
-
+>>![Captura de pantalla 2024-11-05 203435.jpg](Medias%2FCaptura%20de%20pantalla%202024-11-05%20203435.jpg)
 
 💬 _Es tedioso tener tantos puntos para salir,pero si estuvieramos en una interfaz grafica estaria siempre disponible con un boton.
 Podria tenerse en cuenta que el usuario quiera cambiar de operacion, salir o simplemente modificar un campo en un version futuro_
@@ -162,7 +162,8 @@ El metodo **transform** extrae del String en formato JSON solo las claves que re
 Por ultimo realizamo el producto de la tasa por la cantidad y lo mostramos todo desde **calculoTransformado();**  
 💬Como no tenia necesidad unicamente lo muestro y no lo retorno, Ademas en tasas guardamos el resultado de la request y la fecha para mostrar campos importantes de la operacion 
 
-Pueden realizar N operaciones si es necesario y quedan guardadas en una **LIST**
+Pueden realizar N operaciones si es necesario y quedan guardadas en una **LIST**  
+
 💬queda pendiente el implementar un metodo que muestre las multiples operaciones quizas en futuras versiones
 
 ---
