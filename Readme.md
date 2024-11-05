@@ -50,7 +50,12 @@ Les comparto el desafio propuesto por alura [Trello](https://trello.com/b/RU41cv
 > En primer lugar el funcionamiento basico es un conversor de Divisas. Se ingresa la moneda de origen,el monto y la moneda de destino.
 
 💣 _Todo programa debe ser **robusto** asi que nos aseguramos con bloques ___🔒try-catch🔒___ que nuestra aplicacion puede **manejar excepciones** ante un uso inadecuado por parte del **usuario**._   
-En cualquier punto de la operacion el usuario puede arrepentirse y simplemente finalizar.
+En cualquier punto de la operacion el usuario puede arrepentirse y simplemente finalizar.  
+
+>>>![img_6.png](Medias/img_6.png)
+
+Todo el menu excepto el monto es manejado con ingreso de variables enteras!!
+
 
 💬 _Es tedioso tener tantos puntos para salir,pero si estuvieramos en una interfaz grafica estaria siempre disponible con un boton.
 Podria tenerse en cuenta que el usuario quiera cambiar de operacion, salir o simplemente modificar un campo en un version futuro_
