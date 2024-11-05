@@ -39,6 +39,7 @@ A traves de esta libreria podremos manipular la informacion obtenida del servido
 
 ☑️Una alternativa a Gson es Usar ___🔹Jackson🔹___ otra libreria que permite manipular Json para convertir la informacion en algo util para nuestro proyecto.
 Para usarla deberan realizar las implementaciones pertinente de los metodos en los que utilice Gson
+
 ---
 ## 💻--Introduccion--💻
 
