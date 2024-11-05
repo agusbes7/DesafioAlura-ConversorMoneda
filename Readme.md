@@ -11,7 +11,7 @@ limpiar,modularizar y hacerlo mas eficiente,pero como mi primer desafio es un gr
 ---
 ## ⭐ Requisitos ⭐
 A continuacion describiré los softwares usados durante el proyecto y librerias que no pueden faltar.  
-En tasaDeConversion
+
 
 Los softwares principales usados durante el proyecto son:
 
